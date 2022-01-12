@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body class=" bg-gray-100 dark:bg-gray-800 dark:text-gray-50">
-    <section class=" w-full h-14 py-6 justify-center bg-teal-600 flex  ">
+    <section class=" w-full h-20 py-6 justify-center bg-teal-600 flex  ">
         <nav class="flex justify-between w-[1280px]">
             <div class="">
-                LOGO
+                <a href="/"> Shopagric - LOGO</a>
             </div>
 
             <div class="">
                 <ul class="flex flex-row space-x-5 font-poppins">
                     <li class=" px-5 py-2">
-                        <a href="#" class=" px-3">Home</a>
+                        <a href="/" class=" px-3">Home</a>
                     </li>
                     <li class=" px-5 py-2">
-                        <a href="#" class=" px-3">Contact Us </a>
+                        <a href="./contact.html" class=" px-3">Contact Us </a>
                     </li>
                     <li class=" px-5 py-2">
-                        <a href="#" class=" px-3">Activities</a>
+                        <a href="./activities.html" class=" px-3">Activities</a>
                     </li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
         </nav>
     </section>
 
-    <section class=" w-full  h-[700px] ">
+    <section class=" w-full  h-[680px] ">
        <div class=" grid grid-cols-2 px-11 h-full justify-items-center bg-teal-600">
            <div class=" flex flex-col my-auto px-24 space-y-4 ">
                    <h1 class=" text-4xl font-poppins font-bold">Bridging the Poultry Production-Supply Gap In Nigeria.</h1>
@@ -81,15 +81,13 @@
 
     </section>
 
-    <div class="flex w-full">
-        <h2 class=" text-3xl">METRICS</h2>
-    </div>
+    
 
       <section class="w-full flex justify-center mx-auto ">
         <div class="w-[1200px] flex justify-between px-5   self-center mx-auto">
                 <div class=" flex  w-full  flex-col space-y-5 p-8 my-auto mx-auto  ">
                        <div class="w-full  flex gap-2 h-full py-6 rounded-xl shadow-lg px-4 bg-white">
-                          <div class=" w-4/6 ">
+                          <div class=" w-4/6 dark:text-black ">
                             <p class=" text-xl font-poppins font-bold">Projected Production Capacity By Year End - 
                             <span class=" text-xl font-bold my-4">Dec. 31<sup>st</sup> 2022</span></p> 
                             <div class=" flex my-5 justify-center">
@@ -169,13 +167,13 @@
             </div>
             </div>
                 <div class=" flex justify-center flex-col space-y-3 my-10">
-                    <h3 class=" text-3xl text-center">Our distributors</h3>
+                    <h3 class=" text-3xl text-center">Distributors here</h3>
                     <div class=" grid grid-cols-2 gap-4 items-center justify-center px-16  ">
                         <div class=" w-full h-52 bg-blue-400 rounded-xl mb-14 text-center flex justify-center items-center">
                             <p class=" text-4xl">Distributor LOGO</p>
                         </div>
 
-                        <div class=" w-full h-52 bg-white rounded-xl -mb-14 text-center flex justify-center items-center">
+                        <div class=" w-full h-52 bg-slate-500 rounded-xl -mb-14 text-center flex justify-center items-center">
                             <p class=" text-4xl">Distributor LOGO</p>
                         </div>
                     </div>
@@ -189,7 +187,7 @@
 <section class="w-full">
   <div class=" grid grid-cols-2  ">
       <div class=" w-full px-6 py-6 flex px- justify-center ">
-          <div class=" w-full h-full bg-white py-10 px-6">
+          <div class=" w-full h-full bg-white dark:bg-gray-700 py-10 px-6">
               <div class=" flex flex-col space-y-1 ">
                   <h4 class="text-2xl font-poppins ">Quick Order</h4>
                   <p class="text-sm font-poppins text-gray-700">Buy products directly from the Company</p>
@@ -198,19 +196,19 @@
            <div class="flex space-x-3">
                 <!-- single form input -->
                 <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
-                    <label for="unit" class="text-xs font-poppins text-gray-700 px-1 ">Unit</label>
-                    <input type="text" name="unit" class=" w-full focus:outline-none px-1" placeholder="100" id="unit">
+                    <label for="unit" class="text-xs font-poppins dark:text-white text-gray-700 px-1 ">Unit</label>
+                    <input type="text" name="unit" class=" w-full bg-transparent focus:outline-none px-1" placeholder="100" id="unit">
                 </div>
              <!--  end of single form input -->
              <!-- single form input -->
                  <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
-                     <label for="product" class="text-xs font-poppins text-gray-700 px-1 ">Product Type</label>
-                     <select name="product" id="" class=" rounded-lg w-full focus:outline-none">
-                         <option value="One" class="" selected disabled>Select Product type</option>
-                         <option value="Fish Stock">Fish Stock</option>
-                         <option value="Poultry">Poultry</option>
-                         <option value="Fish Feeds">Fish Feeds</option>
-                         <option value="Poultry Feeds">Poultry Feeds</option>
+                     <label for="product" class="text-xs font-poppins dark:text-white  dark:text-white text-gray-700 px-1 ">Product Type</label>
+                     <select name="product" id="" class=" bg-transparent dark:text-white rounded-lg w-full focus:outline-none">
+                         <option value="One" class="  bg-white dark:bg-gray-700 " selected disabled>Select Product type</option>
+                         <option value="Fish Stock" class="  bg-white dark:bg-gray-700 ">Fish Stock</option>
+                         <option value="Poultry" class="  bg-white dark:bg-gray-700 ">Poultry</option>
+                         <option value="Fish Feeds" class="  bg-white dark:bg-gray-700 ">Fish Feeds</option>
+                         <option value="Poultry Feeds" class="  bg-white dark:bg-gray-700 ">Poultry Feeds</option>
                      </select>
                  </div>
              <!--  end of single form input -->
@@ -219,28 +217,28 @@
                <div class=" flex space-x-3">
                      <!-- single form input -->
                 <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
-                    <label for="email" class="text-xs font-poppins text-gray-700 px-1 ">Email</label>
-                    <input type="email" name="email" class=" w-full focus:outline-none px-1" placeholder="me@example.com" id="unit">
+                    <label for="email" class="text-xs font-poppins text-gray-700 px-1  dark:text-white ">Email</label>
+                    <input type="email" name="email" class=" w-full bg-transparent focus:outline-none px-1" placeholder="me@example.com" id="unit">
                 </div>
                 <!--  end of single form input -->
 
                 <!-- single form input -->
                 <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
-                    <label for="phone" class="text-xs font-poppins text-gray-700 px-1 ">Phone Number</label>
-                    <input type="tel" name="phone" class=" w-full focus:outline-none px-1" placeholder="080-000-000-000" id="unit">
+                    <label for="phone" class="text-xs font-poppins text-gray-700 px-1 dark:text-white ">Phone Number</label>
+                    <input type="tel" name="phone" class=" w-full bg-transparent focus:outline-none px-1" placeholder="080-000-000-000" id="unit">
                 </div>
                 <!--  end of single form input -->
                </div>
              <!-- single form input -->
              <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
-                <label for="name" class="text-xs font-poppins text-gray-700 px-1 ">Full Name</label>
-                <input type="text" name="name" class=" w-full focus:outline-none px-1" placeholder="Abdurahman Dauda" id="unit">
+                <label for="name" class="text-xs font-poppins text-gray-700 px-1 dark:text-white ">Full Name</label>
+                <input type="text" name="name" class=" w-full bg-transparent focus:outline-none px-1" placeholder="Abdurahman Dauda" id="unit">
             </div>
             <!--  end of single form input -->
              <!-- single form input -->
              <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
-                <label for="unit" class="text-xs font-poppins text-gray-700 px-1 ">Delivery Address</label>
-                <textarea name="" id="" cols="10" rows="3" class=" focus:outline-none" placeholder="Enter Address"></textarea> 
+                <label for="unit" class="text-xs font-poppins text-gray-700 px-1  bg-transparentdark:text-white ">Delivery Address</label>
+                <textarea name="" id="" cols="10" rows="3" class=" bg-transparent focus:outline-none" placeholder="Enter Address"></textarea> 
             </div>
 
                 <button class=" w-full px-3 py-3 bg-teal-700 rounded-md shadow-lg text-white font-poppins font-bold text-lg">Place Order</button>
@@ -259,9 +257,31 @@
 <!-- end of quick order section -->
 
 
-<section class=" w-full h-24 bg-pink-500">
+<section class=" w-full bg-teal-700  dark:bg-gray-800 text-white ">
+    <div class=" flex flex-col w-full justify-center py-10 text-center px-4">
+        <h3 class=" px-2 font-poppins text-3xl font-bold">Subscribe to our news letter</h3>
+        <p class=" tracking-wider text-xl"> Stay updated on all our activities in Shopagric... Don't miss out on anything </p>
+        
+       <form action="" >
+            <div class=" flex mx-auto justify-center w-2/4 px-4 py-6 ">
+                <input type="text" placeholder="Drop your email" class=" focus:outline-none mx-1 my-0 w-full px-4 dark:bg-gray-800 border rounded-l-full">
+                <button type="submit" class=" text-whit  bg-white text-teal-600 flex-none  font-bold rounded-r-full  px-10 py-2 ">Submit</button>
+                
+            </div>
+       </form>
+
+    </div>
    
 </section>
+
+<footer class="bg-black w-full justify-center py-2  flex  ">
+<nav class=" mx-auto space-x-10">
+    <a href="/" class=" border-b py-1">Home</a>
+    <a href="/login.html" class=" border-b py-1">log In</a>
+    <a href="/contact.html" class=" border-b py-1">Contact Us</a>
+    <a href="/activities.html" class=" border-b py-1">Activities</a>
+</nav>
+</footer>
 
 
 </body>
