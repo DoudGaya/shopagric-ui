@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body class=" bg-gray-100 dark:bg-gray-800 dark:text-gray-50">
-    <section class=" w-full h-20 py-6 justify-center bg-teal-600 flex  ">
+    <!-- <section class=" w-full h-20 py-6 justify-center bg-teal-600 flex  ">
         <nav class="flex justify-between w-[1280px]">
             <div class="">
                <a href="/">LOGO</a>
@@ -33,11 +33,70 @@
 
             </div>
         </nav>
-    </section>
+    </section> -->
 
  
 
-<p class=" text-4xl"> The login page</p>
+<section class=" w-full   h-screen ">
+    <div class=" grid grid-cols-3 gap-1 h-full">
+        <div class=" bg-teal-600 flex flex-col justify-center items-center p py-36 ">
+            <div class=" py-6  flex justify-center text-center flex-col">
+                <img src="./img/smiley.jpg" class=" w-[250px] h-[250px] rounded-full my-6 shadow-lg " alt="" srcset="">
+                <a href="/" class="font-bold text-3xl text-white">
+                    SHOPAGRIC<span class=" text-orange-600 font-bold" >.</span>
+                </a>
+            </div>
+
+            <div class=" ">
+                <ul class="flex space-x-10 text-center">
+                    <li>
+                        <a class=" hover:underline py-1 font-poppins text-white font-bold" href="/home">Home</a>
+                    </li>
+
+                    <li>
+                        <a class=" hover:underline py-1 font-poppins text-white font-bold" href="/contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a class=" hover:underline py-1 font-poppins text-white font-bold" href="/activities.html">Activities</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class=" col-span-2  flex w-full justify-center items-center mx-auto">
+            <div class="flex flex-col bg-white shaodw-xl px-6 py-3 justify-center mx-10 my-10">
+             <div class=" flex flex-col justify-center text-center mb-10 mt-6 mx-10">
+                <h1 class="text-4xl font-poppins font-bold px-16 "> Welcome Back <span class="text-6xl font-poppins text-teal-800">.</span></h1>
+                <p class=" text-xl font-poppins tracking-wide">Log back in to your shopagric's Account</p>
+             </div>
+                
+                
+               <form action="" class="flex flex-col space-y-5 px-4">
+
+
+                <div class=" flex flex-col space-y-1 ">
+                    <label for="email" class=" text-lg font-poppins after:content-['*'] after:text-red-500 after:px-1">Email</label>
+                    <input placeholder="you@mail.com" type="email" class="  placeholder:italic w-full py-2 px-3 focus:outline border-teal-700 border focus:outline-teal-700 rounded-md ">
+                </div>
+
+                <div class=" flex flex-col space-y-1 ">
+                    <label for="email" class=" text-lg font-poppins">Password:</label>
+                    <input placeholder="password"  type="password" class=" w-full py-2 placeholder:italic px-3 focus:outline  border-teal-700 border focus:outline-teal-700 rounded-md ">
+                </div>
+
+                <div class=" flex justify-end ">
+                  <button type="submit" class=" bg-teal-700 text-white font-bold shadow-lg hover:bg-teal-800 px-8 py-2 mt-5 mb-10">Log In</button>
+                </div>
+               </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 </body>
