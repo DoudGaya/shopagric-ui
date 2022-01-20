@@ -9,12 +9,19 @@
 </head>
 <body class=" bg-gray-100 dark:bg-gray-800 dark:text-gray-50">
     <section class=" w-full h-20 py-6 justify-center bg-teal-600 flex  ">
-        <nav class="flex justify-between w-[1280px]">
-            <div class="">
+        <nav class="flex justify-between w-full px-6 md:w-[1280px]">
+            <div class=" flex justify-center items-center text-white scroll">
                 <a href="/">LOGO</a>
             </div>
-
             <div class="">
+                <button class=" md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 text-white w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                      </svg>
+                </button>
+            </div>
+
+            <div class=" hidden md:block">
                 <ul class="flex flex-row space-x-5 font-poppins">
                     <li class=" px-5 py-2">
                         <a href="/" class=" px-3">Home</a>
@@ -22,22 +29,105 @@
                     <li class=" px-5 py-2">
                         <a href="./contact.html" class=" px-3">Contact Us </a>
                     </li>
-                    <li class=" px-5 py-2">
-                        <a href="./activities.html" class=" px-3">Activities</a>
-                    </li>
+        
+                <li>
+                    <a href="/login.html" class="text-white hidden md:block px-5 py-2 cursor-pointer hover:bg-teal-800 bg-teal-700 shadow-lg shadow-teal-700/60 ">Log In</a>
+                </li>
                 </ul>
             </div>
 
-            <div class="">
-                <a href="./login.html" class="text-white px-5 py-2 cursor-pointer hover:bg-teal-800 bg-teal-700 shadow-lg shadow-teal-700/60 ">Log In</a>
+           
 
-            </div>
+            
         </nav>
     </section>
 
+
+
+
  
 
-<p class=" text-4xl"> The Login Page</p>
+<section class="w-full my-20">
+  <div class=" grid lg:grid-cols-2  ">
+      <div class=" w-full px-6 py-6 flex px- justify-center ">
+          <div class=" w-full h-full bg-white dark:bg-gray-700 py-10 px-6">
+              <div class=" flex flex-col space-y-1 ">
+                  <h4 class="text-2xl font-poppins  my-4">Contact Us..</h4>
+         
+              </div>
+            <form  class="  flex flex-col">
+           <div class="flex space-x-3">
+            
+             <!--  end of single form input -->
+             <!-- single form input -->
+             
+             <!--  end of single form input -->
+           </div>
+           <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
+            <label for="name" class="text-xs font-poppins text-gray-700 px-1 dark:text-white ">Full Name</label>
+            <input type="text" name="name" class=" w-full bg-transparent focus:outline-none px-1" placeholder="Abdurahman Dauda" id="unit">
+        </div>
+               <div class=" flex flex-col md:flex-row md:space-x-3">
+                     <!-- single form input -->
+                <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
+                    <label for="email" class="text-xs font-poppins text-gray-700 px-1   dark:text-white ">Email</label>
+                    <input type="email" name="email" class=" w-full bg-transparent focus-within:bg-transparent focus:outline-none px-1" placeholder="me@example.com" id="unit">
+                </div>
+                <!--  end of single form input -->
+
+                <!-- single form input -->
+                <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
+                    <label for="phone" class="text-xs font-poppins text-gray-700 px-1 dark:text-white ">Phone Number</label>
+                    <input type="tel" name="phone" class=" w-full bg-transparent focus:outline-none px-1" placeholder="080-000-000-000" id="unit">
+                </div>
+                <!--  end of single form input -->
+               </div>
+
+             <!-- single form input -->
+             <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
+                <label for="unit" class="text-xs font-poppins text-gray-700 dark:text-white px-1  bg-transparentdark:text-white ">Delivery Address</label>
+                <textarea name="" id="" cols="10" rows="3" class=" bg-transparent focus:outline-none" placeholder="Enter Address"></textarea> 
+            </div>
+
+                <button class=" w-full px-3 py-3 bg-teal-700 rounded-md shadow-lg text-white font-poppins font-bold text-lg">Send Us a Message</button>
+            <!--  end of single form input -->
+  
+            </form>
+
+          </div>
+      </div>
+    <div class=" w-full h-full flex justify-center items-center px-6 md:px-10 py-10">
+       <div class="grid md:grid-cols-2 gap-3">
+            <div class="md:col-span-2 flex flex-col justify-center text-center items-center space-y-2 bg-white dark:bg-gray-700 py-8 px-4 md:px-16 drop-shadow-lg"> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-teal-700" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                  </svg>
+                <p class="font-poppins text-xl font-bold">Our Address</p>
+                 <p class=" font-poppins text-sm">Suite A301 Soar Plaza, 1st Avenue, Gwarimpa, Abuja</p>
+            </div>
+
+            <div class=" flex flex-col justify-center items-center space-y-2 bg-white dark:bg-gray-700 py-8  drop-shadow-lg"> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-teal-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                  </svg>
+                <p class="font-poppins text-xl font-bold">Email Us</p> 
+                 <p class=" font-poppins ">info@shopagric.ng</p>
+
+            </div>
+
+            <div class=" flex flex-col justify-center items-center space-y-2 bg-white dark:bg-gray-700 py-8  drop-shadow-lg"> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-teal-700" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                  </svg>
+                <p class="font-poppins text-xl font-bold">Call Us</p>
+                 <p class=" font-poppins ">+234 706 846 0227</p>
+
+            </div>
+       </div>
+    </div>
+
+  </div>
+</section>
 
 
 </body>

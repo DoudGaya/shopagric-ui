@@ -9,12 +9,19 @@
 </head>
 <body class=" bg-gray-100 dark:bg-gray-800 dark:text-gray-50">
     <section class=" w-full h-20 py-6 justify-center bg-teal-600 flex  ">
-        <nav class="flex justify-between w-[1280px]">
+        <nav class="flex justify-between w-full px-6 lg:w-[1280px]">
+            <div class=" flex justify-center items-center text-white scroll">
+                <a href="/">LOGO</a>
+            </div>
             <div class="">
-                <a href="/"> Shopagric - LOGO</a>
+                <button class=" lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 text-white w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                      </svg>
+                </button>
             </div>
 
-            <div class="">
+            <div class=" hidden lg:block">
                 <ul class="flex flex-row space-x-5 font-poppins">
                     <li class=" px-5 py-2">
                         <a href="/" class=" px-3">Home</a>
@@ -22,50 +29,48 @@
                     <li class=" px-5 py-2">
                         <a href="./contact.html" class=" px-3">Contact Us </a>
                     </li>
-                    <li class=" px-5 py-2">
-                        <a href="./activities.html" class=" px-3">Activities</a>
+                    <li>
+                        <a href="/login.html" class="text-white hidden lg:block px-5 py-2 cursor-pointer hover:bg-teal-800 bg-teal-700 shadow-lg shadow-teal-700/60 ">Log In</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="">
-                <a href="/login.html" class="text-white px-5 py-2 cursor-pointer hover:bg-teal-800 bg-teal-700 shadow-lg shadow-teal-700/60 ">Log In</a>
 
-            </div>
+            
         </nav>
     </section>
 
-    <section class=" w-full  h-[680px] ">
-       <div class=" grid grid-cols-2 px-11 h-full justify-items-center bg-teal-600">
-           <div class=" flex flex-col my-auto px-24 space-y-4 ">
-                   <h1 class=" text-4xl font-poppins font-bold">Bridging the Poultry Production-Supply Gap In Nigeria.</h1>
+    <section class=" w-full h-[680px] ">
+       <div class="grid lg:grid-cols-2 grid-cols-1 px-11 w-full h-full lg:justify-items-center bg-teal-600">
+          
+           <div class=" flex flex-col my-auto lg:px-24 space-y-4 ">
+                   <h1 class=" text-2xl lg:text-4xl font-poppins text-white font-bold">Bridging the Poultry Production-Supply Gap In Nigeria.</h1>
                    <div class="">
-                        <p class=" text-2xl  font-poppins ">Making Poultry Meat Product available, affordable and accessible.</p>
+                        <p class=" text-base lg:text-2xl text-white font-poppins ">Making Poultry Meat Product available, affordable and accessible.</p>
                    </div>
                    <div class=" relative py-3 max-w-max">
                     <a href="#" class="text-white px-5 py-2 cursor-pointer hover:bg-teal-800 bg-teal-700 shadow-lg shadow-teal-700/60 mx-auto ">Learn More</a>
 
                    </div>
            </div>
-           <div class=" relative w-full h-full  px-20">
-               <img src="./img/banner.png" alt="" class=" absolute bottom-0 left-52" srcset="">
-
+           <div class=" hidden lg:block lg:relative w-full h-full  lg:px-20">
+               <img src="./img/banner.png" alt="" class=" absolute  bottom-0 " srcset="">
            </div>
 
 
        </div>
 
     </section>
-    <section class="w-full flex justify-center my-10">
-        <div class="w-[1200px] flex justify-between px-5  self-center">
-            <div class=" w-full px-10 py-10 flex justify-center items-center">
-                <div class=" w-full h-full rounded-2xl transform -rotate-3 px-10 py-10  bg-teal-600 shadow-2xl">
-                   <img src="./img/ceo.jpg" class=" h-full w-full transform rotate-3 object-cover shadow-lg rounded-2xl" alt="" srcset="">
+    <section class="w-full flex justify-center lg:my-10 ">
+        <div class="lg:w-[1200px] w-full flex flex-col lg:flex-row justify-between lg:px-5  self-center">
+            <div class=" w-full lg:px-10 lg:py-10 flex justify-center items-center">
+                <div class=" w-full h-full lg:rounded-2xl transform lg:-rotate-3 lg:px-10 lg:py-10  lg:bg-teal-600 shadow-2xl">
+                   <img src="./img/ceo.jpg" class=" h-full w-full transform lg:rotate-3 object-cover shadow-lg lg:rounded-2xl" alt="" srcset="">
                 </div>
 
             </div>
             <div class=" w-full">
-                <div class=" flex  justify-items-center text-center w-full flex-col space-y-5 px-8 py-24  ">
+                <div class=" flex  justify-items-center text-center w-full flex-col space-y-5 px-8 lg:py-24 my-10  ">
                     <h1 class=" text-3xl font-poppins font-bold ">About Our Company</h1>
                     <p class=" font-poppins ">
                         At Shopagric, a trademark of Shopnorth Global Limited, we are focused on improving the production-supply chain of poultry meat products in Nigeria, through the operation and maintenance of an organic, healthy and effective production-distribution system.
@@ -83,16 +88,16 @@
 
     
 
-      <section class="w-full flex justify-center mx-auto ">
-        <div class="w-[1200px] flex justify-between px-5   self-center mx-auto">
-                <div class=" flex  w-full  flex-col space-y-5 p-8 my-auto mx-auto  ">
-                       <div class="w-full  flex gap-2 h-full py-6 rounded-xl shadow-lg px-4 bg-white">
-                          <div class=" w-4/6 dark:text-black ">
-                            <p class=" text-xl font-poppins font-bold">Projected Production Capacity By Year End - 
+      <section class="w-full flex flex-col lg:flex-row justify-center mx-auto ">
+        <div class="lg:w-[1200px] w-full flex flex-col lg:flex-row justify-between lg:px-5   self-center mx-auto">
+                <div class=" flex  w-full flex-col space-y-5 py-8 lg:p-8 my-auto mx-auto  ">
+                       <div class="w-full  flex flex-col lg:flex-row gap-2 h-full py-6 lg:rounded-xl shadow-lg px-2 lg:px-4 dark:bg-gray-700 dark:text-white bg-white">
+                          <div class=" text-center lg:w-4/6 dark:text-white ">
+                            <p class=" lg:text-xl text-lg font-poppins font-bold">Projected Production Capacity By Year End - 
                             <span class=" text-xl font-bold my-4">Dec. 31<sup>st</sup> 2022</span></p> 
                             <div class=" flex my-5 justify-center">
-                                <h1 class=" text-4xl font-bold font-poppins space-x-0 ">39,700</h1> <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 -mt-3 text-green-500 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <h1 class=" text-2xl lg:text-4xl font-bold font-poppins space-x-0 ">39,700</h1> <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="lg:h-8 h-6 lg:w-8 w-6 -mt-3 text-green-500 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
                                     </svg>
                                 </span>
@@ -100,12 +105,12 @@
                             
                             </div>
 
-                            <div class="">
+                            <div class=" text-sm lg:text-base text-center">
                                 With a current poultry production capacity of 19,700, we have been able to meet the production-supply demands of poultry meat by our customers through an effective production system design.
                             </div>
                           </div>
-                          <div class="  w-2/6 h-full py-2 px-2 flex">
-                            <div class="w-full border-b-2 h-[270px] grid items-end grid-cols-3 gap-4 py-2 px-2 border-gray-600">
+                          <div class="  lg:w-2/6 h-full py-2 px-10 lg:px-0 flex">
+                            <div class="w-full border-b-2 h-[200px] lg:h-[270px] grid items-end grid-cols-3 gap-10 lg:gap-6 py-2 px-2 border-gray-600">
                                 <div class=" h-2/6 bg-teal-600 shadow-lg shadow-teal-900/30"></div>
                                 <div class=" h-3/4 bg-teal-600 shadow-lg shadow-teal-900/30"></div>
                                 <div class=" h-full bg-teal-600 shadow-lg shadow-teal-900/30"></div>
@@ -116,16 +121,16 @@
             </div>
 
 
-                <div class=" grid grid-cols-2 gap-6  w-full items-center  justify-items-center px-36 py-16">
-                    <div class=" flex space-y-6 w-full flex-col ">
-                        <div class=" w-full h-52 rounded-lg bg-white shadow-lg px-4 py-4 grid grid-cols-2">
-                            <div class=" flex flex-col py-4 space-y-1 justify-center dark:text-gray-900 ">
+                <div class=" grid grid-cols-2 lg:gap-6 gap-y-6 w-full items-center justify-items-center lg:px-8 xl:px-14 py-16">
+                    <div class=" flex space-y-6 w-full flex-col col-span-2 lg:col-span-1 ">
+                        <div class=" w-full h-52 lg:rounded-lg bg-white dark:bg-gray-700 shadow-lg lg:px-4 px-16 py-4 grid grid-cols-2">
+                            <div class=" flex flex-col py-4 space-y-1 justify-center dark:text-white ">
                                 <h3 class=" text-md font-bold font-poppins">Poultry</h3>
                                 <p class=" text-teal-600 text-md font-poppins font-bold"> Fish</p>
                                 <p class=" text-md font-poppins font-bold text-teal-600">LiveStock</p>
                             </div>
-                            <div class=" flex justify-end">
-                               <div class="w-full border-b-2 grid items-end grid-cols-3 gap-2 py-1 px-2 border-gray-600">
+                            <div class=" flex justify-end md:px-16 lg:px-0">
+                               <div class="w-full border-b-2 grid items-end grid-cols-3 gap-2 lg:gap-2 md:gap-16 py-1 px-2 border-gray-600">
                                    <div class=" h-2/6 bg-teal-600 shadow-lg shadow-teal-900/30"></div>
                                    <div class=" h-3/4 bg-teal-600 shadow-lg shadow-teal-900/30"></div>
                                    <div class=" h-full bg-teal-600 shadow-lg shadow-teal-900/30"></div>
@@ -133,16 +138,16 @@
                             </div>
 
                         </div>
-                        <div class=" h-52 rounded-lg w-full bg-white shadow-lg px-4 py-5 flex flex-col justify-center">
-                            <div class="flex flex-col justify-center  text-center space-y-1 dark:text-gray-900">
+                        <div class=" h-52 lg:rounded-lg w-full bg-white dark:bg-gray-700 shadow-lg px-4 py-5 flex flex-col justify-center">
+                            <div class="flex flex-col justify-center  text-center space-y-1 dark:text-white">
                                 <h1 class="text-4xl text-teal-600 font-poppins font-bold">40k+</h1>
                                 <h2 class="tracking-wide text-lg font-poppins font-bold">Produced Birds</h2>
                                 <p class="font-light text-xs font-poppins"></p>
                             </div>
                         </div>
                     </div>
-                    <div class=" w-full h-52 rounded-lg bg-white shadow-lg px-4 py-5 flex flex-col justify-center">
-                            <div class="flex flex-col justify-center  text-center space-y-1 dark:text-gray-900">
+                    <div class=" w-full h-52 col-span-2 lg:col-span-1 lg:rounded-lg bg-white shadow-lg px-4 py-5 dark:bg-gray-700 flex flex-col justify-center">
+                            <div class="flex flex-col justify-center  text-center space-y-1 dark:text-white">
                                 <h1 class="text-4xl text-teal-600 font-poppins font-bold">30%</h1>
                                 <h2 class="tracking-wide text-lg font-poppins font-bold">Increase in productivity</h2>
                                 <p class="font-light text-xs font-poppins"></p>
@@ -155,28 +160,55 @@
 
 
 
-    <section class="w-full">
+    <section class="w-full my-10">
         
         <div class=" grid grid-cols-2  ">
-            <div class=" px-16 bg-teal-600 text-white ">
-                <div class=" flex  justify-items-center w-full flex-col space-y-5 px-8 py-24  ">
+            <div class=" lg:px-16 bg-teal-600 col-span-2 lg:col-span-1 text-white ">
+                <div class=" flex  justify-items-center w-full flex-col space-y-5 text-center px-6 lg:px-8 py-24  ">
                     <h1 class=" text-3xl font-poppins font-bold">Our Progress & Marketing <br> Analytics</h1>
                     <p class=" font-poppins "> We are committed to the course of maintaining our unique production-supply chain of poultry meat products, hence the need for a gradual expansion of the farm, so as to exceed our supply target of 320,000 poultry birds in the next 12 months.</p>
                      <div class=" my-4">
                 </div>
             </div>
             </div>
-                <div class=" flex justify-center flex-col space-y-3 my-10">
-                    <h3 class=" text-3xl text-center">Distributors here</h3>
-                    <div class=" grid grid-cols-2 gap-4 items-center justify-center px-16  ">
-                        <div class=" w-full h-52 bg-blue-400 rounded-xl mb-14 text-center flex justify-center items-center">
-                            <p class=" text-4xl">Distributor LOGO</p>
-                        </div>
+                <div class=" flex px-5 lg:px-10 py-10 bg-white col-span-2 lg:col-span-1 dark:bg-gray-700 space-y-3  ">
+                 <ul class=" flex flex-col space-y-3">
+                     <li class=" flex space-x-3 items-start ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 flex-none  text-teal-700 " viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                          </svg>
+                          <p>The activities list number one. Two this is not Two this is notTwo this is not</p>
+                     </li>
+                     
+                     <li class=" flex space-x-3 items-start ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 flex-none  text-teal-700 " viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                          </svg>
+                          <p>The activities list number one. Two this is not Two this is notTwo this is not</p>
+                     </li>
 
-                        <div class=" w-full h-52 bg-slate-500 rounded-xl -mb-14 text-center flex justify-center items-center">
-                            <p class=" text-4xl">Distributor LOGO</p>
-                        </div>
-                    </div>
+                     <li class=" flex space-x-3 items-start ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 flex-none  text-teal-700 " viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                          </svg>
+                          <p>The activities list number one. Two this is not Two this is notTwo this is not</p>
+                     </li>
+
+                     <li class=" flex space-x-3 items-start  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 flex-none  text-teal-700 " viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                          </svg>
+                          <p>The  The activities list number one. Two this is not Two this is notTwo this is not The activities list number one. Two this is not Two this is notTwo this is not The activities list number one. Two this is not Two this is notTwo this is notactivities list number one. Two this is not Two this is notTwo this is not</p>
+                     </li>
+
+                     <li class=" flex space-x-3 items-start ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 flex-none  text-teal-700 " viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                          </svg>
+                          <p>The activities list number one. Two this is not Two this is notTwo this is not</p>
+                     </li>
+                 </ul>
+                  
                 </div>
 
         </div>
@@ -184,16 +216,16 @@
 
 
 <!-- quick order section -->
-<section class="w-full">
+<section class="w-full bg-white dark:bg-gray-800 lg:dark:bg-gray-700 my-10">
   <div class=" grid grid-cols-2  ">
-      <div class=" w-full px-6 py-6 flex px- justify-center ">
+      <div class=" w-full md:px-6 py-6 lg:col-span-1 col-span-2 flex px- justify-center ">
           <div class=" w-full h-full bg-white dark:bg-gray-700 py-10 px-6">
               <div class=" flex flex-col space-y-1 ">
-                  <h4 class="text-2xl font-poppins ">Quick Order</h4>
+                  <h4 class="text-2xl font-poppins">Quick Order</h4>
                   <p class="text-sm font-poppins text-gray-700">Buy products directly from the Company</p>
               </div>
             <form  class="  flex flex-col">
-           <div class="flex space-x-3">
+           <div class="flex flex-col lg:flex-row lg:space-x-3">
                 <!-- single form input -->
                 <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
                     <label for="unit" class="text-xs font-poppins dark:text-white text-gray-700 px-1 ">Unit</label>
@@ -214,11 +246,11 @@
              <!--  end of single form input -->
            </div>
 
-               <div class=" flex space-x-3">
+               <div class=" flex flex-col lg:flex-row lg:space-x-3">
                      <!-- single form input -->
                 <div class=" flex flex-col space-y-1 my-2 w-full h-full px-2 py-1 rounded-md border border-slate-400">
                     <label for="email" class="text-xs font-poppins text-gray-700 px-1   dark:text-white ">Email</label>
-                    <input type="email" name="email" class=" w-full bg-transparent focus-within:bg-transparent focus:outline-none px-1" placeholder="me@example.com" id="unit">
+                    <input type="email" name="email" class=" w-full bg-transparent :bg-yellow-500 focus:outline-none px-1" placeholder="me@example.com" id="unit">
                 </div>
                 <!--  end of single form input -->
 
@@ -248,8 +280,19 @@
 
           </div>
       </div>
-      <div class=" w-full">
-          <img src="./img/lady.jpg" alt="" class="w-full h-full object-cover" srcset="">
+      <div class=" w-full col-span-2 lg:col-span-1 bg-teal-700 flex-col h-full py-10 flex justify-center space-y-10 items-center ">
+          <h1 class=" text-3xl font-poppins text-white font-bold">Our distributors</h1>
+
+        
+        <div class=" grid grid-cols-2 gap-10 items-center justify-items-center px-10 lg:px-16  ">
+            <div class=" lg:w-52 w-32 h-32  lg:h-52 bg-blue-400 rounded-full mb-14 text-center flex justify-center items-center">
+                <p class=" text-4xl">D</p>
+            </div>
+
+            <div class=" lg:w-52 w-32 h-32  lg:h-52 bg-slate-500 rounded-full -mb-20 text-center flex justify-center items-center">
+                <p class=" text-4xl">D</p>
+            </div>
+        </div>
       </div>
 
   </div>
@@ -258,14 +301,14 @@
 
 
 <section class=" w-full bg-teal-700  dark:bg-gray-800 text-white ">
-    <div class=" flex flex-col w-full justify-center py-10 text-center px-4">
-        <h3 class=" px-2 font-poppins text-3xl font-bold">Subscribe to our news letter</h3>
-        <p class=" tracking-wider text-xl"> Stay updated on all our activities in Shopagric... Don't miss out on anything </p>
+    <div class=" flex flex-col w-full justify-center py-10 text-center space-y-3 px-4">
+        <h3 class=" px-2 font-poppins text-xl lg:text-3xl font-bold">Subscribe to our news letter</h3>
+        <p class=" tracking-wider text-base lg:text-xl"> Stay updated on all our activities in Shopagric... Don't miss out on anything </p>
         
-       <form action="" >
-            <div class=" flex mx-auto justify-center w-2/4 px-4 py-6 ">
-                <input type="text" placeholder="Drop your email" class=" text-gray-900 focus:outline-none mx-1 my-0 w-full px-4 dark:bg-gray-800 border rounded-l-full">
-                <button type="submit" class=" text-whit  bg-white text-teal-600 flex-none  font-bold rounded-r-full  px-10 py-2 ">Submit</button>
+       <form action=" flex">
+            <div class=" flex flex-col lg:flex-row items-center mx-auto lg:space-y-0 space-y-6 border lg:border-none rounded-md justify-center lg:w-2/4 px-4 py-6 ">
+                <input type="text" placeholder="Drop your email" class=" text-gray-900 focus:outline-none lg:mx-1 py-3 rounded-md dark:text-white  w-full px-3 dark:bg-gray-800 border roudned lg:rounded-l-full">
+                <button type="submit" class="w-full lg:max-w-min bg-white dark:bg-teal-600 dark:text-white text-teal-600 flex-none rounded-md  font-bold lg:rounded-r-full  lg:px-10 py-3 ">Submit</button>
                 
             </div>
        </form>
@@ -275,11 +318,11 @@
 </section>
 
 <footer class="bg-black w-full justify-center py-2  flex  ">
-<nav class=" mx-auto space-x-10">
+<nav class=" mx-auto lg:space-x-10 space-x-2">
     <a href="/" class=" border-b py-1">Home</a>
     <a href="/login.html" class=" border-b py-1">log In</a>
     <a href="/contact.html" class=" border-b py-1">Contact Us</a>
-    <a href="/activities.html" class=" border-b py-1">Activities</a>
+    <!-- <a href="/activities.html" class=" border-b py-1">Activities</a> -->
 </nav>
 </footer>
 
