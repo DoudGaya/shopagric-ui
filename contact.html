@@ -6,22 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Shopagric</title>
     <link rel="stylesheet" href="./dist/output.css">
+    <script  src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </head>
 <body class=" bg-gray-100 dark:bg-gray-800 dark:text-gray-50">
-    <section class=" w-full h-20 py-6 justify-center bg-teal-600 flex  ">
-        <nav class="flex justify-between w-full px-6 md:w-[1280px]">
+       <!-- NAV SECTION -->
+       <section class=" w-full h-20 py-6 lg:px-20 bg-teal-600 flex relative" x-data="{ menu: false }">
+        <!--  MOBILE NAV -->
+        <div class=" absolute   w-full px-6 lg:hidden" x-show="menu" @click.away="menu = false">
+            <div class=" bg-white dark:bg-gray-800 rounded-md px-4 flex flex-col space-y-6 py-6">
+              <div class=" flex justify-between items-center">
+                  <a href="">
+                      LOGO
+                  </a>
+                <button class=" border border-teal-600 rounded-md " @click=" menu = ! menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </button>
+              </div>
+                <ul class="flex space-y-10 flex-col">
+                    <li class="">
+                        <a href="" class=" flex items-center space-x-2 px-2 py-2 rounded-md">
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                              </svg>
+                              <p class=" font-poppins text-lg">Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class=" flex items-center space-x-2 px-2 py-2 rounded-md">
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                              </svg>
+                              <p class=" font-poppins text-lg">Contact</p>
+                        </a>
+                    </li> <li>
+                        <a href="./login.html" class=" flex items-center space-x-2 px-2 py-2 rounded-md">
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                              </svg>
+                              <p class="font-poppins text-lg">Log In</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--  MOBILE NAV -->
+        
+        <nav class="flex justify-between w-full px-6 lg:w-[1280px]">
             <div class=" flex justify-center items-center text-white scroll">
-                <a href="/">LOGO</a>
+                <a href="/" class=" font-bold">LOGO</a>
             </div>
             <div class="">
-                <button class=" md:hidden">
+                <button class=" lg:hidden" @click="menu = true">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 text-white w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                       </svg>
                 </button>
             </div>
 
-            <div class=" hidden md:block">
+            <div class=" hidden lg:block">
                 <ul class="flex flex-row space-x-5 font-poppins">
                     <li class=" px-5 py-2">
                         <a href="/" class=" px-3">Home</a>
@@ -29,16 +77,17 @@
                     <li class=" px-5 py-2">
                         <a href="./contact.html" class=" px-3">Contact Us </a>
                     </li>
-        
-                <li>
-                    <a href="/login.html" class="text-white hidden md:block px-5 py-2 cursor-pointer hover:bg-teal-800 bg-teal-700 shadow-lg shadow-teal-700/60 ">Log In</a>
-                </li>
+                    <li>
+                        <a href="/login.html" class="text-white hidden lg:block px-5 py-2 cursor-pointer hover:bg-teal-800 bg-teal-700 shadow-lg shadow-teal-700/60 ">Log In</a>
+                    </li>
                 </ul>
             </div>
+
+
             
         </nav>
     </section>
-
+<!--  end of nav section -->
 
 
 

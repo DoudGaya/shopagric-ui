@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./dist/output.css">
     <script  src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class=" bg-gray-100 dark:bg-gray-800 dark:text-gray-50">
+<body class=" bg-gray-100 dark:bg-gray-800 dark:text-gray-50 overflow-x-hidden">
+
 
 
     <div class=" w-screen h-screen flex relative" x-data="{open: false}">
@@ -158,103 +159,169 @@
                             </div>
                     <!-- end header section -->
                     </div>
-        <!--  MAIN SECTION HERE -->
-                    <div class=" w-full h-screen my-14 flex ">
-                            <div class=" w-full  lg:px-2 flex flex-col">
-                                    <div class=" flex flex-col text-center justify-center">
-                                            <p class=" text-2xl  font-poppins ">Rescheduled Payment Dates</p>
-                                            <div class=" w-full border-b-2 py-6 "></div>
-                                            <div class="my-4 p-4 rounded-lg bg-white dark:bg-gray-900  overflow-x-auto flex justify-center ">
-                                                <div class=" overflow-x-auto">
-                                                    <table class=" border-separate  w-full text-sm ">
-                                                        <thead class=" bg-teal-700 my-10 border w-full  text-white   ">
-                                                            <tr class=" justify-between w-full ">
-                                                                <th class="p-3">Farms</th>
-                                                                <th class="p-3">Project Units</th>
-                                                                <th class="p-3">Refund Date</th>
-                                                                <th class="p-3">Refund %</th>
-                                                                <th class="p-3">2 <sup>nd</sup> Installment </th>
-                                                                <th class="p-3">3 <sup>nd</sup> Installment </th>
-                                                                <th class="p-3">4 <sup>nd</sup> Installment </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr class=" bg-gray-200 dark:bg-gray-800 dark:text-white">
+            <div class=" w-full h-screen my-14 flex ">
+                <div class=" w-full  lg:px-2 flex flex-col">
+                    <div class=" flex flex-col text-center justify-center">
+                        <p class=" text-2xl  font-poppins ">User and Account Details</p>
+                        <div class="w-full border-b-2 my-6"></div>
 
-                                                                <td class="p-3 font-bold text-black dark:text-white">Poultry Farm Project 14</td>
-                                                                <td class="p-3">1 - 9</td>
-                                                                <td class="p-3">Jan, 31<sup>st</sup> 2022 - Feb, 4<sup>th</sup> 2022 </td>
-                                                                <td class="p-3">100% Capital</td>
-                                                                <td class="p-3"></td>
-                                                                <td class="p-3"></td>
-                                                                <td class="p-3"></td>
-
-                                                            </tr>
-
-                                                            <tr class=" bg-gray-200 dark:bg-gray-800 dark:text-white">
-                                                                <!-- second field farm -->
-                                                                <td class="p-3 font-bold text-black dark:text-white">Poultry Farm Project 14</td>
-                                                                <td class="p-3">10</td>
-                                                                <td class="p-3">Jan, 31<sup>st</sup> 2022 - Feb, 4<sup>th</sup> 2022 </td>
-                                                                <td class="p-3">25% Capital</td>
-                                                                <td class="p-3 ">
-                                                                    <p class="">25% <br>April, 30<sup>st</sup> 2022 - May, 4<sup>th</sup> 2022</p>
-                                                                </td>
-                                                                <td class="p-3">25% <br>Jul, 31<sup>st</sup> 2022 - Aug, 4<sup>th</sup> 2022</td>
-                                                                <td class="p-3">25% <br>Oct, 30<sup>st</sup> 2022 - Nov, 4<sup>th</sup> 2022</td>
-
-                                                            </tr>
-
-                                                            <tr class=" bg-gray-200 dark:bg-gray-800 dark:text-white">
-                                                                <!--  third field -->
-                                                                <td class="p-3 font-bold text-black dark:text-white">Poultry Farm Project 15</td>
-                                                                <td class="p-3">1 - 6</td>
-                                                                <td class="p-3">Feb, 28<sup>st</sup> 2022 - Mar, 4<sup>th</sup> 2022 </td>
-                                                                <td class="p-3">100% Capital</td>
-                                                                <td class="p-3"></td>
-                                                                <td class="p-3"></td>
-                                                                <td class="p-3"></td>
-
-                                                            </tr>
-
-                                                            <tr class=" bg-gray-200 dark:bg-gray-800 dark:text-white">
-                                                                <!--  fourth Column -->
-                                                                <td class="p-3 font-bold text-black dark:text-white">Poultry Farm Project 14</td>
-                                                                <td class="p-3">10 - 25</td>
-                                                                <td class="p-3">Feb, 28<sup>st</sup> 2022 - Mar, 4<sup>th</sup> 2022 </td>
-                                                                <td class="p-3">15% Capital</td>
-                                                                <td class="p-3">20 <br> May, 31<sup>st</sup> 2022 - Jun, 4<sup>th</sup> 2022</td>
-                                                                <td class="p-3">30 <br> Aug, 31<sup>st</sup> 2022 - Sep, 4<sup>th</sup> 2022</td>
-                                                                <td class="p-3">35 <br> Nov, 30<sup>st</sup> 2022 - Dec, 4<sup>th</sup> 2022</td>
-
-                                                            </tr>
-
-                                                            <tr class=" bg-gray-200 dark:bg-gray-800 dark:text-white">
-                                                                <!-- last column -->
-                                                                <td class="p-3 font-bold text-black dark:text-white">Poultry Farm Project 15</td>
-                                                                <td class="p-3">7 - 50</td>
-                                                                <td class="p-3">Mar, 31<sup>st</sup> 2022 - Apr, 4<sup>th</sup> 2022 </td>
-                                                                <td class="p-3">20% Capital</td>
-                                                                <td class="p-3">30 <br> Jun, 30 2022 - Jul, 4<sup>th</sup> 2022</td>
-                                                                <td class="p-3">25 <br> Sep, 31<sup>st</sup> 2022 - Oct, 4<sup>th</sup> 2022</td>
-                                                                <td class="p-3">25 <br> Dec, 31<sup>st</sup> 2022 - Dec, 31<sup>st</sup> 2022</td>
-
-                                                            </tr>
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-
-                                            </div>
+                        <div class=" flex flex-col lg:flex-row ">
+                            <div class="lg:w-4/6 w-full lg:border-r-2 border-0 grid gap-2 px-3 grid-cols-1 lg:grid-cols-2 ">
+                                <!-- THE PROFILE DETAILS -->
+                                <div class="  flex flex-col">
+                                    <div class=" w-full font-poppins border-2 text-xl bg-teal-600 rounded-lg py-4 px-2">
+                                        Profile 
                                     </div>
+                                    <ul class=" border border-teal-600  rounded-lg flex flex-col items-start px-4 py-4 my-4 ">
+                                        <li class=" py-2">
+                                            <p>Name: <span>Abdulrahman Dauda</span></p> 
+                                        </li>
+                                        <li class=" py-2">
+                                            <p>Phone: <span>08062249834</span></p> 
+                                        </li>
+                                        <li class=" py-2">
+                                            <p>Email: <span>adaag.ad@gmail.com</span></p> 
+                                        </li>
+                                        <li class=" py-2 flex space-x-2">
+                                            <p>Address: <span>Kano</span></p> 
+                                        </li>
+                                       
+                                        <li class=" py-2 flex space-x-2">
+                                            <p>State: <span>Kano</span></p> 
+                                            <p>City: <span>Kano</span></p> 
+                                        </li>
+
+                                        <li class=" py-2 flex space-x-2">
+                                            <p>City: <span>Kano</span></p> 
+                                        </li>
+
+                                        <li class=" py-2 flex space-x-2">
+                                            <p>Gender: <span>Kano</span></p> 
+                                        </li>
+
+                                        <li class=" py-2 flex space-x-2">
+                                            <p>DOB: <span>Kano</span></p> 
+                                        </li>
+                                        <li class=" flex justify-end w-full bg-teal-600 rounded-lg p-2">
+                                            <button class=" px-4 py-2 border text-white rounded-lg">Update Details</button>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <!--  END OF PROFILE DETAILS -->
+
+                                <!-- THE PROFILE FORM GRID -->
+                                <div class="  flex flex-col">
+                                    <div class=" w-full font-poppins border-2 text-xl text-white bg-teal-600 rounded-lg py-4 px-2">
+                                        Profile 
+                                    </div>
+                                    <ul class=" border border-teal-600 space-y-4 rounded-lg flex flex-col items-start px-4 py-4 my-4 ">
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">Name: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">Phone: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">Email: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">Address: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+                                       
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">State: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">City: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">Gender: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">DOB: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+                                        <li class=" flex justify-end w-full bg-teal-600 rounded-lg p-2">
+                                            <button class=" px-4 py-2 border text-white rounded-lg">Save</button>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+
+                                <!-- END OF PROFILE FORM GRID -->
+                               
                             </div>
+                            <!-- BANK DETAILS  -->
+                            <div class=" w-full lg:w-2/6 flex flex-col px-3 ">
+                                <div class="  flex flex-col">
+                                    <div class=" w-full font-poppins border-2 text-xl bg-teal-600 rounded-lg py-4 px-2">
+                                        Profile 
+                                    </div>
+                                    <ul class=" border border-teal-600  rounded-lg flex flex-col items-start px-4 py-4 my-4 ">
+                                        <li class=" py-2">
+                                            <p>Account Name: <span>Abdulrahman Dauda</span></p> 
+                                        </li>
+                                        <li class=" py-2">
+                                            <p>Account Number: <span>08062249834</span></p> 
+                                        </li>
+                                        <li class=" py-2">
+                                            <p>Bank Name: <span>adaag.ad@gmail.com</span></p> 
+                                        </li>
+                                        <li class=" flex justify-end w-full bg-teal-600 rounded-lg p-2">
+                                            <button class=" px-4 py-2 border text-white rounded-lg">Update Details</button>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
 
+                                <!-- BANK DETAILS FORM -->
+                                <div class="  flex flex-col">
+                                    <div class=" w-full font-poppins border-2 text-xl text-white bg-teal-600 rounded-lg py-4 px-2">
+                                        Profile 
+                                    </div>
+                                    <ul class=" border border-teal-600 space-y-4 rounded-lg flex flex-col items-start px-4 py-4 my-4 ">
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">Name: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">Phone: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+                                        <li class=" w-full flex items-center rounded-lg border">
+                                            <label class="bg-teal-600 py-2 px-3 rounded-l-lg text-white">Email: </label> 
+                                            <input type="text" class="w-full py-2 focus:outline-none px-2 rounded-r-lg border-none focus:border">
+                                        </li>
+                                       
+                                        
+                                        <li class=" flex justify-end w-full bg-teal-600 rounded-lg p-2">
+                                            <button class=" px-4 py-2 border text-white rounded-lg">Save</button>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- BANK DETAILS FORMS -->
+                            </div>
+                        </div>
+                            
                     </div>
-            <!-- END MAIN SECTION HERE -->
-
+                    
+                </div>
+                
             </div>
         </div>
-
+        
     </div>
 
 </body>
